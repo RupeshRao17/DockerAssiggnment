@@ -24,7 +24,7 @@ pipeline {
         stage('Run Containers') {
             steps {
                 bat 'docker run -d -p 3003:3000 node-app'
-                bat 'docker run -d -p 8080:80 html-app'
+                bat 'docker run -d -p 8082:80 html-app'
             }
         }
     }
